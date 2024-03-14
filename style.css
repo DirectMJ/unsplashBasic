@@ -1,0 +1,59 @@
+body {
+	background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  
+}
+
+.fetchImagesWrapper {
+  margin-bottom: 20px;
+}
+
+.getImagesButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: lightcoral;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.getImagesButton:hover {
+  background-color: maroon;
+}
+
+.imageDisplayWrapper {
+  margin-top: 25px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.imageToDisplay {
+  width: 550px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: aliceblue;
+}
+
+@media (max-width: 600px) {
+  .imageToDisplay {
+    width: 90%;
+    height: auto;
+  }
+}
